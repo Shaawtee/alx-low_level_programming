@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet -print the alphabet
+ * print_alphabet - print the alphabet
  *
  * Return: Always success
  */
@@ -14,3 +14,4 @@ for (n = 'a'; n <= 'z'; n++)
 _putchar(n);
 }
 _putchar('\n');
+}
