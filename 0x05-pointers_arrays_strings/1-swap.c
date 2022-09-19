@@ -11,6 +11,7 @@ void swap_int(int *a, int *b)
 {
 	int alx;
 
+
 	alx = *a;
 	*a = *b;
 	*b = alx;
