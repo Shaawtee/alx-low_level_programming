@@ -5,25 +5,20 @@ void print_uint(unsigned int n);
 /**
  * print_number - prints an integer
  * @n: The integer to print
+ *
  */
 void print_number(int n)
 {
+	unsigned int num = n;
+
 	if (n < 0)
 	{
-		_putchar('_');
-		n = -n;
+		_putchar('-');
+		num = -num;
 	}
 
-	print_uint((unsigned int) n);
-}
+	if ((num / 10) > 0)
+		print_number(num / 10);
 
-/**
- * print_uint - prints an unsigned integer
- * @n: The unsigned int to print
- */
-void print_uint(unsigned int n)
-{
-	if (n / 10 != 0)
-		print_uint(n / 10);
-	_putchar(n % 10 + '0');
+	_putchar((num % 10) + '0');
 }
