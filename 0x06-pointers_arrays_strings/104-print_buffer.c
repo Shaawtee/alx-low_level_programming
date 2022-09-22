@@ -1,5 +1,4 @@
 #include "main.h"
-
 #include <stdio.h>
 
 /**
@@ -7,6 +6,8 @@
  * @c: buffer to print
  * @s: bytes of buffer to print
  * @l: line of buffer to print
+ *
+ * Return: void
  */
 void print_line(char *c, int s, int l)
 {
@@ -18,6 +19,8 @@ void print_line(char *c, int s, int l)
 			printf("%02x", c[l * 10 + j]);
 		else
 			printf(" ");
+		if (j % 2)
+			putchar(' ');
 	}
 	for (k = 0; k <= s; k++)
 	{
@@ -32,6 +35,8 @@ void print_line(char *c, int s, int l)
  * print_buffer - prints a buffer
  * @b: buffer to print
  * @size: size of buffer
+ *
+ * Return: void
  */
 void print_buffer(char *b, int size)
 {
