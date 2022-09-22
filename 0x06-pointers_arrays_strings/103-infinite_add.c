@@ -7,8 +7,7 @@
  * @r: result buffer
  * @size_r: result buffer size
  *
- * Return: 0 if the result can not be stored in r,
- * otherwise a pointer to the result
+ * Return: address of r or 0
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
@@ -25,7 +24,6 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	{
 		n = m;
 		if (i >= 0)
-
 			n += n1[i] - '0';
 		if (j >= 0)
 			n += n2[j] - 'o';
