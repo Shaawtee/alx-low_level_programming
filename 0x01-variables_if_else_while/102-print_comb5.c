@@ -29,7 +29,6 @@ int main(void)
 		for (j = 0; j < 100; j++)
 
 		{
-
 			c = j / 10; /* doubles snum */
 			d = j % 10; /* singles snum */
 
@@ -46,20 +45,13 @@ int main(void)
 				if (!(a == 9 && b == 8))
 
 				{
-
 					putchar(44);
 					putchar(32);
-
 				}
-
 			}
-
 		}
-
 	}
-
 	putchar(10);
 
 	return (0);
-
 }
