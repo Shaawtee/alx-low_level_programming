@@ -1,4 +1,4 @@
-include <stdio.h>
+#include <stdio.h>
 /**
  * main - entry point
  *
@@ -20,6 +20,7 @@ int main(void)
 			printf("Fizz");
 		else
 			printf("%i", n);
+
 		if (n < 100)
 			printf(" ");
 		else
